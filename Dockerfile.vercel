@@ -1,26 +1,25 @@
-# Build Stage
-FROM maven:3.9.9-eclipse-temurin-21 AS build
+# ---------- Build stage ----------
 
+FROM maven:3.9-eclipse-temurin-21 AS build
 WORKDIR /app
 
-# Cache dependencies separately for faster rebuilds
 COPY pom.xml .
-RUN mvn -B dependency:go-offline || true
+RUN mvn -B dependency:go-offline
 
-COPY . .
-
+COPY src ./src
 RUN mvn -B clean package -DskipTests
 
-# Runtime Stage
-FROM eclipse-temurin:21-jre
+# ---------- Runtime stage ----------
 
+FROM eclipse-temurin:21-jre
 WORKDIR /app
+
+ENV JAVA_HOME=/opt/java/openjdk
+ENV PATH="${JAVA_HOME}/bin:${PATH}"
+
+RUN groupadd -r spring && useradd -r -g spring spring
+USER spring
 
 COPY --from=build /app/target/*.jar app.jar
 
-# Vercel routes traffic to port 80 by default unless PORT is
-# overridden in the Vercel Project Settings. Do NOT hardcode PORT here,
-# so the app always matches whatever Vercel actually forwards to.
-EXPOSE 80
-
-ENTRYPOINT ["java", "-Xmx384m", "-jar", "app.jar"]
+ENTRYPOINT ["sh", "-c", "${JAVA_HOME}/bin/java -Xmx256m -Xss512k -XX:+UseSerialGC -Dserver.port=${PORT} -jar app.jar"]
