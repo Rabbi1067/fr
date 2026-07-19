@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<th:block th:fragment="content">
+<section id="home">
+  <!-- Background decorations -->
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+  <div class="hero-blob blob-3"></div>
+  <div class="hero-grid"></div>
+
+  <!-- Left: text content -->
+  <div class="hero-left">
+    <div class="available-badge">
+      <div class="badge-dot"></div>
+      Available for Collaboration
+    </div>
+
+    <h1 class="hero-title">
+      Hi, I'm Md. Fazley Rabbi<br />
+      <span class="hero-title-accent">Competitive Programmer,</span><br />
+      AI Enthusiast & Software Developer
+    </h1>
+
+    <p class="hero-intro">
+    Passionate Computer Science & Engineering student at Southeast University with strong expertise in Competitive Programming, 
+    Artificial Intelligence, and Machine Learning. I love solving complex problems through efficient algorithms and building 
+    impactful real-world solutions with clean, scalable code.
+    </p>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">1000<span>+</span></div>
+        <div class="stat-label">Problems Solved</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">10<span>+</span></div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">ICPC</div>
+        <div class="stat-label">Honorable</div>
+      </div>
+    </div>
+
+    <div class="hero-btns">
+ <!-- Improved Download CV Button -->
+  <a th:href="@{/files/CV.pdf}" target="_blank" class="btn-teal" style="background: #10b981; border: 2px solid #10b981;">
+    <!-- Better CV Download Icon -->
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+      <polyline points="14 2 14 8 20 8"/>
+      <path d="M12 18v-6"/>
+      <path d="M9 15l3 3 3-3"/>
+    </svg>
+    Download CV
+  </a>
+      <a href="#skills" class="btn-outline">
+        <!-- Info icon -->
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8"  x2="12"   y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+        View Skills
+      </a>
+    </div>
+
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/fazleyrabbi1067" target="_blank" rel="noopener" class="social-btn" title="LinkedIn" aria-label="LinkedIn">in</a>
+      <a href="https://github.com/Rabbi1067"               target="_blank" rel="noopener" class="social-btn" title="GitHub"   aria-label="GitHub">
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483
+            0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466
+            -.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832
+            .092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688
+            -.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844
+            c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651
+            .64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855
+            0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017
+            C22 6.484 17.522 2 12 2z"/>
+        </svg>
+      </a>
+      <a href="https://codeforces.com/profile/rabbi1067"  target="_blank" rel="noopener" class="social-btn" title="Codeforces" aria-label="Codeforces">CF</a>
+      <a href="https://www.codechef.com/users/rabbi1067"  target="_blank" rel="noopener" class="social-btn" title="CodeChef"   aria-label="CodeChef">CC</a>
+    </div>
+  </div>
+
+  <!-- Right: photo card + floating badges -->
+  <div class="hero-right">
+    <div class="photo-frame">
+
+      <!-- Floating badges -->
+      <div class="float-card fc-1">
+        <div class="float-card-icon">🏆</div>
+        <div class="float-card-text">
+          <strong>ICPC Asia Dhaka</strong>
+          <span>Honorable Mention · 2024</span>
+        </div>
+      </div>
+
+      <div class="float-card fc-2">
+        <div class="float-card-icon">🤖</div>
+        <div class="float-card-text">
+          <strong>AI+ Certified</strong>
+          <span>Prompt Engineer Lv.1</span>
+        </div>
+      </div>
+
+      <div class="float-card fc-3">
+        <div class="float-card-icon">📊</div>
+        <div class="float-card-text">
+          <strong>10+ Certifications</strong>
+          <span>Microsoft · IEEE · Udemy</span>
+        </div>
+      </div>
+
+      <!-- Profile card -->
+      <div class="photo-card">
+        <div class="photo-placeholder">
+          <div class="photo-avatar-wrap">
+            <div class="photo-avatar-ring">
+             <img
+                 th:src="@{/images/My_pic.jpeg}"
+                 alt="Fazley Rabbi"
+                class="profile-photo"
+    />
+            </div>
+          </div>
+          <div class="photo-name-card">
+            <h3>Fazley Rabbi</h3>
+            <p>Competitive Programmer · AI Enthusiast</p>
+          </div>
+          <div class="photo-skills-row">
+            <span class="photo-skill-tag">C++</span>
+            <span class="photo-skill-tag">Python</span>
+            <span class="photo-skill-tag">ML</span>
+            <span class="photo-skill-tag">ICPC</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /photo-frame -->
+  </div><!-- /hero-right -->
+
+  <div class="scroll-indicator">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    Scroll Down
+  </div>
+</section>
+
+</th:block>
+</body>
+</html>

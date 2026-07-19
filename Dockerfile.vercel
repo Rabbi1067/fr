@@ -1,0 +1,26 @@
+# Build Stage
+FROM maven:3.9.9-eclipse-temurin-21 AS build
+
+WORKDIR /app
+
+# Cache dependencies separately for faster rebuilds
+COPY pom.xml .
+RUN mvn -B dependency:go-offline || true
+
+COPY . .
+
+RUN mvn -B clean package -DskipTests
+
+# Runtime Stage
+FROM eclipse-temurin:21-jre
+
+WORKDIR /app
+
+COPY --from=build /app/target/*.jar app.jar
+
+# Vercel routes traffic to port 80 by default unless PORT is
+# overridden in the Vercel Project Settings. Do NOT hardcode PORT here,
+# so the app always matches whatever Vercel actually forwards to.
+EXPOSE 80
+
+ENTRYPOINT ["java", "-Xmx384m", "-jar", "app.jar"]

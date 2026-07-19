@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<th:block th:fragment="content">
+<section id="about">
+  <div class="max-w">
+    <div class="section-label reveal">Get to Know Me</div>
+    <h2 class="section-heading reveal">Who I Am</h2>
+
+    <div class="about-grid">
+      <div class="about-img-side reveal">
+        <div class="about-img-box">
+        <img th:src="@{/images/me.jpeg}" alt="Fazley Rabbi" class="about-photo">
+          <div class="about-stat-grid">
+            <div class="about-stat-box">
+              <div class="num">Southeast </div>
+              <div class="lbl">University</div>
+            </div>
+            <div class="about-stat-box">
+              <div class="num">10+</div>
+              <div class="lbl">Certs</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text-side reveal">
+        <p>
+          I'm <strong>Fazley Rabbi</strong>, a motivated Computer Science and Engineering student at
+          <strong>Southeast University, Dhaka</strong>. I enjoy solving hard problems, writing efficient
+          algorithms, and building software that makes a difference.
+        </p>
+        <p>
+          My journey into tech started with a love for <strong>problem solving</strong> — that quickly
+          evolved into competitive programming. I earned an
+          <strong>Honorable Mention at ICPC Asia Dhaka 2024</strong> Preliminary Contest, and I'm now
+          deeply interested in <strong>Machine Learning</strong>.
+        </p>
+        <p>
+          Beyond coding, I've worked as a <strong>Research Assistant</strong>, contributed to the THIRA
+          project, and actively participate in IEEE Computer Society events. I also create design work —
+          posters, slides, and social media content using Canva.
+        </p>
+        <p>
+          I'm always looking to learn, collaborate, and build meaningful things.
+          If you have an interesting project or opportunity, let's connect.
+        </p>
+        <div class="about-tags">
+          <span class="about-tag">Problem Solver</span>
+          <span class="about-tag">ML Learner</span>
+          <span class="about-tag">ICPC Contestant</span>
+          <span class="about-tag">Research Assistant</span>
+          <span class="about-tag">IEEE Member</span>
+          <span class="about-tag">AI Enthusiast</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</th:block>
+</body>
+</html>

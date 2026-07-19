@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<th:block th:fragment="content">
+<section id="contact">
+  <div class="max-w">
+    <div class="section-label reveal">Get In Touch</div>
+    <h2 class="section-heading reveal">Contact Me</h2>
+
+    <div class="contact-wrap">
+      <div class="contact-info reveal">
+        <h3>Let's work together</h3>
+        <p>Open to research collaborations, interesting projects, internships, and learning opportunities. Don't hesitate to reach out!</p>
+
+        <div class="contact-links">
+          <a href="mailto:fazlerabbicse65@gmail.com" class="c-link">
+            <div class="c-icon">✉️</div>
+            <div class="c-text">
+              <strong>Email</strong>
+              <span>fazlerabbicse65@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/fazleyrabbi1067" target="_blank" rel="noopener" class="c-link">
+            <div class="c-icon">💼</div>
+            <div class="c-text">
+              <strong>LinkedIn</strong>
+              <span>fazleyrabbi1067</span>
+            </div>
+          </a>
+          <a href="https://github.com/Rabbi1067" target="_blank" rel="noopener" class="c-link">
+            <div class="c-icon">🐙</div>
+            <div class="c-text">
+              <strong>GitHub</strong>
+              <span>Rabbi1067</span>
+            </div>
+          </a>
+          <a href="tel:+8801779326236" class="c-link">
+            <div class="c-icon">📞</div>
+            <div class="c-text">
+              <strong>Phone</strong>
+              <span>+880 1779-326236</span>
+            </div>
+          </a>
+          <div class="c-link" style="cursor:default">
+            <div class="c-icon">📍</div>
+            <div class="c-text">
+              <strong>Location</strong>
+              <span>Nikunja-2, Khilkhet, Dhaka-1229</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form id="contact-form" class="contact-form-box reveal" action="/" method="post">        <h3>Send a Message</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">Your Name</label>
+            <input
+    id="fname"
+    name="name"
+    type="text"
+    placeholder="John Doe"
+    required
+/>
+
+          </div>
+          <div class="form-group">
+            <label for="femail">Email Address</label>
+            <input
+    id="femail"
+    name="email"
+    type="email"
+    placeholder="john@email.com"
+    required
+/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="fsubject">Subject</label>
+          <input
+    id="fsubject"
+    name="subject"
+    type="text"
+    placeholder="Project Collaboration"
+    required
+/>
+        </div>
+        <div class="form-group">
+          <label for="fmessage">Message</label>
+          <textarea
+    id="fmessage"
+    name="message"
+    placeholder="Tell me about your project or opportunity..."
+    required
+></textarea>
+        </div>
+        <button type="submit" class="form-submit">
+    Send Message →
+</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</th:block>
+</body>
+</html>

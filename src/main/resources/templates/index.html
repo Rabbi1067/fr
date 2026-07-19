@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <!-- Favicon -->
+<link rel="icon" type="image/png" th:href="@{/images/fr.png}">
+
+  <!-- SEO -->
+  <title>Fazley Rabbi — CSE Student & ML Explorer</title>
+  <meta name="description" content="Portfolio of Fazley Rabbi — CSE student at Southeast University, competitive programmer (ICPC Honorable Mention), and Machine Learning enthusiast." />
+  <meta name="author" content="Fazley Rabbi" />
+  <meta name="keywords" content="Fazley Rabbi, CSE, ML, ICPC, competitive programming, Southeast University, portfolio" />
+
+  <!-- Open Graph (social share preview) -->
+  <meta property="og:title"       content="Fazley Rabbi — CSE & ML Portfolio" />
+  <meta property="og:description" content="ICPC Honorable Mention · AI+ Certified · ML Explorer" />
+  <meta property="og:url"         content="https://fazleyrabbi.dev" />
+  <meta property="og:type"        content="website" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://fazleyrabbi.dev" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" th:href="@{/css/styles.css}" />
+</head>
+<body>
+
+<div th:replace="~{fragments/layout :: nav}"></div>
+
+<div th:replace="~{sections/home :: content}"></div>
+<div th:replace="~{sections/about :: content}"></div>
+<div th:replace="~{sections/projects :: content}"></div>
+<div th:replace="~{sections/skills :: content}"></div>
+<div th:replace="~{sections/experience :: content}"></div>
+<div th:replace="~{sections/competitive :: content}"></div>
+<div th:replace="~{sections/certifications :: content}"></div>
+<div th:replace="~{sections/contact :: content}"></div>
+
+<div th:replace="~{fragments/layout :: footer}"></div>
+<div th:replace="~{fragments/layout :: scripts}"></div>
+
+</body>
+</html>

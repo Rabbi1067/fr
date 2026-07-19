@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<th:block th:fragment="content">
+<section id="projects">
+  <div class="max-w">
+    <div class="section-label reveal">My Work</div>
+    <h2 class="section-heading reveal">Featured Projects</h2>
+    <p class="section-sub reveal">A selection of things I've built, researched, and explored.</p>
+
+    <div class="projects-grid">
+
+      <!-- GitHub SVG (reusable shortcut) -->
+      <!-- Project 1: THIRA -->
+      <div class="proj-card reveal">
+        <div class="proj-top">
+          <div class="proj-icon">🧠</div>
+          <div class="proj-links">
+            <a href="https://github.com/Rabbi1067" target="_blank" rel="noopener" class="proj-link" title="GitHub" aria-label="GitHub">
+              <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="proj-title">THIRA — Travel Health Impact Research Application</div>
+          <span class="proj-status status-research">Research</span>
+        </div>
+        <p class="proj-desc">Worked as Assistant Coordinator and Data Collector for THIRA — a joint research project of Kyushu University (Japan) and Grameen Communications (Bangladesh). Awarded Certificate of Appreciation.</p>
+        <div class="proj-stack">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">Research</span>
+          <span class="proj-tag">LaTeX</span>
+          <span class="proj-tag">IEEE Format</span>
+        </div>
+      </div>
+
+      <!-- Project 2: CP Journey -->
+      <div class="proj-card reveal">
+        <div class="proj-top">
+          <div class="proj-icon">🏆</div>
+          <div class="proj-links">
+            <a href="https://codeforces.com/profile/rabbi1067" target="_blank" rel="noopener" class="proj-link" title="Codeforces" aria-label="Codeforces">CF</a>
+            <a href="https://www.codechef.com/users/rabbi1067"  target="_blank" rel="noopener" class="proj-link" title="CodeChef"   aria-label="CodeChef">CC</a>
+          </div>
+        </div>
+        <div>
+          <div class="proj-title">Competitive Programming Journey</div>
+          <span class="proj-status status-wip">Active</span>
+        </div>
+        <p class="proj-desc">Actively solving algorithmic challenges on Codeforces and CodeChef. Earned ICPC Asia Dhaka 2024 Honorable Mention. Focused on graph theory, dynamic programming, number theory, and data structures.</p>
+        <div class="proj-stack">
+          <span class="proj-tag">C++</span>
+          <span class="proj-tag">Algorithms</span>
+          <span class="proj-tag">Graph Theory</span>
+          <span class="proj-tag">DP</span>
+        </div>
+      </div>
+
+      <!-- Project 3: ML Learning Path -->
+      <div class="proj-card reveal">
+        <div class="proj-top">
+          <div class="proj-icon">🤖</div>
+          <div class="proj-links">
+            <a href="https://github.com/Rabbi1067" target="_blank" rel="noopener" class="proj-link" title="GitHub" aria-label="GitHub">
+              <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="proj-title">ML Learning Path — Scikit-learn &amp; NumPy</div>
+          <span class="proj-status status-wip">In Progress</span>
+        </div>
+        <p class="proj-desc">Systematic exploration of machine learning concepts — from linear regression to classification trees. Implementing algorithms from scratch using scikit-learn on real datasets. Completed 99-hour DS/ML/DL/NLP Udemy bootcamp.</p>
+        <div class="proj-stack">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">scikit-learn</span>
+          <span class="proj-tag">NumPy</span>
+          <span class="proj-tag">Pandas</span>
+        </div>
+      </div>
+
+      <!-- Project 4: Library Management -->
+      <div class="proj-card reveal">
+        <div class="proj-top">
+          <div class="proj-icon">☕</div>
+          <div class="proj-links">
+            <a href="https://github.com/Rabbi1067" target="_blank" rel="noopener" class="proj-link" title="GitHub" aria-label="GitHub">
+              <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="proj-title">Library Management System</div>
+          <span class="proj-status status-done">Completed</span>
+        </div>
+        <p class="proj-desc">A desktop-based library management app built with JavaFX featuring book inventory, member management, borrowing records, and fine calculation. Implements full OOP principles with clean MVC architecture.</p>
+        <div class="proj-stack">
+          <span class="proj-tag">Java</span>
+          <span class="proj-tag">JavaFX</span>
+          <span class="proj-tag">OOP</span>
+          <span class="proj-tag">MVC</span>
+        </div>
+      </div>
+
+      <!-- Project 5: Algorithm Visualizer -->
+      <div class="proj-card reveal">
+        <div class="proj-top">
+          <div class="proj-icon">📊</div>
+          <div class="proj-links">
+            <a href="https://github.com/Rabbi1067" target="_blank" rel="noopener" class="proj-link" title="GitHub" aria-label="GitHub">
+              <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="proj-title">Algorithm Visualizer — Sorting &amp; Pathfinding</div>
+          <span class="proj-status status-wip">In Progress</span>
+        </div>
+        <p class="proj-desc">An interactive visualizer for classic algorithms including bubble sort, merge sort, quicksort, and Dijkstra's pathfinding. Step-by-step animation shows time complexity and execution flow.</p>
+        <div class="proj-stack">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">Matplotlib</span>
+          <span class="proj-tag">Algorithms</span>
+          <span class="proj-tag">Visualization</span>
+        </div>
+      </div>
+
+      <!-- Project 6: IEEE LaTeX -->
+      <div class="proj-card reveal">
+        <div class="proj-top">
+          <div class="proj-icon">📄</div>
+          <div class="proj-links">
+            <a href="https://github.com/Rabbi1067" target="_blank" rel="noopener" class="proj-link" title="GitHub" aria-label="GitHub">
+              <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="proj-title">IEEE Research Paper — LaTeX Template Suite</div>
+          <span class="proj-status status-done">Completed</span>
+        </div>
+        <p class="proj-desc">Developed a reusable LaTeX template suite for IEEE-format academic papers. Includes structured sections, bibliography format, figure/table styling, and math equation environments.</p>
+        <div class="proj-stack">
+          <span class="proj-tag">LaTeX</span>
+          <span class="proj-tag">IEEE Format</span>
+          <span class="proj-tag">Academic Writing</span>
+          <span class="proj-tag">BibTeX</span>
+        </div>
+      </div>
+
+      <!-- Project 7: IEEE Design -->
+      <div class="proj-card reveal">
+        <div class="proj-top">
+          <div class="proj-icon">🎨</div>
+          <div class="proj-links">
+            <a href="https://www.linkedin.com/in/fazleyrabbi1067" target="_blank" rel="noopener" class="proj-link" title="LinkedIn" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div>
+          <div class="proj-title">IEEE CS SBC — Event Design &amp; Branding</div>
+          <span class="proj-status status-done">Completed</span>
+        </div>
+        <p class="proj-desc">Designed promotional materials for IEEE CS SEU SBC events — programming contest banners, LaTeX workshop posters, and social media creatives — maintaining consistent visual identity using Canva.</p>
+        <div class="proj-stack">
+          <span class="proj-tag">Canva</span>
+          <span class="proj-tag">Graphic Design</span>
+          <span class="proj-tag">Branding</span>
+          <span class="proj-tag">Social Media</span>
+        </div>
+      </div>
+
+        <!-- Project 8: Parking Management System -->
+<div class="proj-card reveal">
+  <div class="proj-top">
+    <div class="proj-icon">🚗</div>
+
+    <div class="proj-links">
+      <a href="https://github.com/Rabbi1067/Parking_Management_System_Java_project"
+         target="_blank"
+         rel="noopener"
+         class="proj-link"
+         title="GitHub"
+         aria-label="GitHub">
+        <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483
+          0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466
+          -.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088
+          2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951
+          0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65
+          0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004
+          1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546
+          1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028
+          2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678
+          1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019
+          10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div>
+    <div class="proj-title">Parking Management System</div>
+    <span class="proj-status status-done">Completed</span>
+  </div>
+
+  <p class="proj-desc">
+    A Java-based Parking Management System for managing vehicle entry,
+    exit, parking slots, fee calculation, and customer records.
+    Developed using Object-Oriented Programming principles.
+  </p>
+
+  <div class="proj-stack">
+    <span class="proj-tag">Java</span>
+    <span class="proj-tag">OOP</span>
+    <span class="proj-tag">File Handling</span>
+    <span class="proj-tag">Desktop App</span>
+  </div>
+</div>
+    <!-- Project 9: BMI Calculator -->
+<div class="proj-card reveal">
+  <div class="proj-top">
+    <div class="proj-icon">⚖️</div>
+
+    <div class="proj-links">
+      <a href="https://github.com/Rabbi1067/python-project-BMI"
+         target="_blank"
+         rel="noopener"
+         class="proj-link"
+         title="GitHub"
+         aria-label="GitHub">
+        <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483
+          0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466
+          -.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088
+          2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951
+          0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65
+          0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004
+          1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546
+          1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028
+          2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678
+          1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019
+          10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div>
+    <div class="proj-title">BMI Calculator</div>
+    <span class="proj-status status-done">Completed</span>
+  </div>
+
+  <p class="proj-desc">
+    A simple desktop BMI Calculator built with Python and Tkinter.
+    Users can calculate Body Mass Index by entering height and weight,
+    with instant health category classification through an intuitive GUI.
+  </p>
+
+  <div class="proj-stack">
+    <span class="proj-tag">Python</span>
+    <span class="proj-tag">Tkinter</span>
+    <span class="proj-tag">GUI</span>
+    <span class="proj-tag">BMI</span>
+  </div>
+</div>
+
+
+    </div><!-- /projects-grid -->
+  </div>
+</section>
+
+</th:block>
+</body>
+</html>
